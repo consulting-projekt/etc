@@ -1,0 +1,53 @@
+Testing Konzept
+
+- 5 Kategorien mit Fragen 
+
+- Jede Kategorie enthält 10 Fragen
+
+- Die Kategorien werden nach Use Cases erstellt
+
+- 6-7 Fragen sollen dabei eine valide Antwort zurückgeben
+
+- 3-4 Fragen sollen eine Rückfrage oder eine Unvollständigkeit (Fehler) zurückgeben
+
+5 Kategorien:
+	1. Einfache Abfragen nach dedizierten Lokationen (Ziel-basiert)
+	2. Komplexe Abfragen nach Lokationen (Zwischenstopps, Zeitbeschränkungen)
+	3. Abfragen mit semantischer Suche
+	4. Abfrage nach Routenplanung (Effizienz-basiert)
+	5. Spezielle Abfrage Szenarien
+	
+1. Kategorie:
+- "Zeig mir bitte den nächsten Bus von der Station Meßberg zum Hauptbahnhof"
+- "Wann geht der Nächste zur Station Reeperbahn?"
+- "Ich benötge die nächste Linie von der Station Hochrad zur Großen Brunnenstraße"
+- "Wann geht der nächste Bus der Linie 151 vom Zollamt Waltershof zum Inselpark"
+- "Eidelstedter Platz nach Schubackstraße, jetzt"
+- "Wie komme ich jetzt von Luckmoor zum Habichtsplatz"
+- "Ich brauche in 35 Minuten einen Bus vom Dörpsweg zur Richardstraße"
+- "Wie komme ich von der Schnackenburgalle über die Linie 172 zur Station Am Volkspark" (# Fehler: Falsche Linie)
+- "Ich muss zur Böttgerstraße" (# Fehler: Kein Ursprung)
+- "Welche Linie fährt zwischen Suhrenkamp und Röntgenstraße"
+
+2. Kategorie:
+- "Ich muss in 2h 35 min von Puckholm zum Rieck Museum. Wie komme ich dort hin?" (# Lange Distanz)
+- "Ich muss zur Grundschule Kirchwerder und wieder zurück" (# Rückweg)
+- "Ich benötige einen Bus der Linie 543 von der Eißendorfer Straße zum Vahrenwinkelweg. Anschließend benötige ich einen Bus vom Hainholzweg" (# 2 Anfragen in einer Abfrage)
+...
+
+3. Kategorie:
+- "Ich brauche einen Bus von der Zweitbrückenstraße nach St.Pauli"
+- "Ich bin gerade an der TU Hamburg und muss in 10 Minuten zur Mönckebergstraße"
+- "Ich möchte zum Hafen. Wann geht der Nächste?"
+- "Wann geht die nächste Linue zum Wasser?"
+- "Ich möchte zur Allianz Arena. Wie komme ich dahin?" (# Fehler: Falsche Stadt)
+...
+
+4. Kategorie:
+- "Ich brauche die schnellste Route vom Kressenweg zum Eppendorfer Marktplatz" (# mehrere Routen zwischen Zentralplätzen möglich)
+- "Schnellste Route von der Fähre bis zum Hauptbahnhof"
+...
+
+5. Kategorie:
+- "Ich habe Lust etwas Neues zu erleben. Letztes Wochenende war ich am Hafen. Da möchte ich heute nicht hin. Mhm. Haha. Ich glaube ich möchte zum HSV Stadium. Da ist es immer sehr schön. Am Besten jetzt gleich, direkt hier von der Brandenburger Straße"
+...
