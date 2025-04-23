@@ -18,15 +18,19 @@
   Zweitens soll es die Struktur der Arbeit, sprich die Glierung, kurz als Text erläutern, sodass ein roter Faden erkennbar ist.
   Die Gliederung soll dabei bereits die Methodik referenzieren und die einzelnen Shcritte der Methodik mit den Gliederungspunkten mappen, sodass der Leser versteht, wann welcher Schritt umgesetzt wird.
   
-# 2 Theoretischer Hindergrund von Retrieval Augmented Generations
-
-  ## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1 Funktionalität von RAGs
-  ## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.2 Vorteile von RAGs
-
-  Das Kapitel des theoretischen Hintergrunds hat 2 Funktionen.
-  Konrket soll die FUnktionsweise und die Relevanz von RAGs dargelegt werden als Theorieblock.
-  Im 2. Teil jedes Kapitels sollen aktuelle Papers von RAGs und deren Anwendung referenziert werden.
-  Damit soll aufgezeigt werden, wie andere bereits diese Problemstellung mittels RAG gelöst haben und welche Vorteile sie aufgezeigt haben (sowie auch Limitationen)
+# 2 Theoretischer Hindergrund und Forschungsstand
+  ## &nbsp;&nbsp;&nbsp; 2.1 Natural Language Processing 
+  Einleitung des theoretischen Grundlangen anhand "der Basics" und Erläuterung, was unter NLP zu verstehen ist, wie sich NLP von NLU abgrenzt und warum NLP/NLU zur Lösung unserer Problemstellung notwendig ist. Hier wird ebenfalls auf die Verarbeitung (bspw. Tokenisierung eingegangen)
+  ## &nbsp;&nbsp;&nbsp; 2.2 Large Language Models
+  Fließender Übergang zu LLM, welche NLP/NLU-Methoden verwenden, jedoch generativer Art sind. Beleuchtung des Trainings und der unterschiedlichen Modelle und Größen von LLM sowie Darstellung der aktuellen Produkt-Landschaft. Ggf. kurzer Fokus auf Benchmarks, falls sinnvoll.
+  ## &nbsp;&nbsp;&nbsp; 2.3 Retrieval-Augmented Generation
+  Funktionsweise und Relevanz von RAGs darstellen sowie auf aktuelle Paper und deren (erfolgreiche) Anwendung eingehen. Aufzeigen der Fähigkeiten und des Nutzens von RAGs im Kontext unserer Problemstellung (ebenfalls darstellung von Limitationen). Beleuchtung von unterschiedlichen Varianten
+  ## &nbsp;&nbsp;&nbsp; OPTIONAL: *2.4 Graph-Datenbanken* alternativ *2.4 API*
+  *Darstellung von NoSQL-Datenbanken und/oder Graph-Datenbanken zur Speicherung und Nutzung von Daten mit Relationen. Ebenfalls Beleuchtung von Kombinationen von Graph-Datenbanken, RAGs und LLMs mit vorhandenen Lösungen* 
+  
+  alternativ 
+  
+  *Darstellung und Erläuterung von APIs inkl. aktueller Standards sowie Vor- und Nachteile*
 
 # 3 Praktische Anwendung
 
