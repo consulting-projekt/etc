@@ -58,17 +58,22 @@
   ### &nbsp;&nbsp;&nbsp; 3.3.6 Abwägung der Datenquellen
   ### &nbsp;&nbsp;&nbsp; 3.3.6 Evaluation der technischen Lösung
   
-# 4 Evaluation und Consulting zur technischen Lösung
-  ## &nbsp;&nbsp;&nbsp; 4.1 Implementierte Vorteile
-  ## &nbsp;&nbsp;&nbsp; 4.2 Aufwandsschätzungen
-  ## &nbsp;&nbsp;&nbsp; 4.3 Limitationen
+# 4 Evaluation der technischen Lösung
+  ## &nbsp;&nbsp;&nbsp; 4.1 Kritische Bewertung
+  ## &nbsp;&nbsp;&nbsp; 4.2 Identifizierte Limitationen
+ In diesem Kapitel soll die technische Lösung hinsichtlich der Problemstellung kritisch bewertet werden. Wird das Problem gelöst? Ist die Problemlösung angemessen? Welche Lösungen haben sich als ideal herausgestellt und warum?
 
- In diesem Kapitel soll der Consulting Teil der Arbeit formuliert werden. Welcher Vorteil bietet die technische Lösung dem Kunden und welche Aufwände sind dabei verbunden. 
- Welches Problem des Kunden wird dabei für HVV gelöst. Aber auch: welche Limitationen liegen vor.
+# 5 Consulting der HVV
+  ## &nbsp;&nbsp;&nbsp; 5.1 Aktuelle Situation
+  ## &nbsp;&nbsp;&nbsp; 5.2 Zieldefinition
+  ## &nbsp;&nbsp;&nbsp; 5.3 Lösungskonzeption
+  ## &nbsp;&nbsp;&nbsp; 5.4 Zeit- und Kostenplanung
+  ## &nbsp;&nbsp;&nbsp; 5.4 Zusammenfassung der Optionen
+ In diesem Kapitel soll der Consulting Teil der Arbeit formuliert werden. Wie ist die aktuelle Situation bei der HVV und warum soll hier überhaupt etwas angepasst oder entwickelt werden? Wie ist das Ziel zu definieren und wann/womit wird es erreicht (Metriken)? Wie kann eine konkrete Lösung aussehen und gibt es hier eine günstigere/schlankere und eine umfassendere/kostenintensivere Lösung? Wie sieht eine Zeit- und Kostenplanung konkret für die Lösung/en aus (Vollintegration mit Backend und Frontend)? Abschließend eine Zusammenfassung der Keyfacts sowie der potenziellen Optionen zur Zielerreichung.
 
-# 5 Zusammenfassung und Ausblick
-  ## &nbsp;&nbsp;&nbsp; 5.1 Zusammenfassung
-  ## &nbsp;&nbsp;&nbsp; 5.2 Ausblick
+# 6 Zusammenfassung und Ausblick
+  ## &nbsp;&nbsp;&nbsp; 6.1 Zusammenfassung
+  ## &nbsp;&nbsp;&nbsp; 6.2 Ausblick
 
  Zuletzt soll die technische Implementierung zusammengefasst werden. Was hat funktioniert, was nicht. Referenz auf die Methodik, den theoretischen Hintgerund/aktueller Forschungsstand sowie die Zielstellung und Problemstellung der Arbeit ist sinvoll.
  Im Ausblick sollen die möglichen nächsten Schritte dargelegt werden. Was kann als nächstes folgen, was sollte man noch evaluieren, testen, implementieren, welche themen aus dem aktuellen forschungsstand sollen noch aufgegriffen werden.
