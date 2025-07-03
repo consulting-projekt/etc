@@ -6,6 +6,11 @@
 * https://www.consulting-life.de/consulting-tagessatz/
     * Jahresgehalt x 3 / 250
 
+### backend
+
+#### routing (use case classification)
+amazon kostenrechnung für routing mit llm:
+https://aws.amazon.com/de/blogs/machine-learning/multi-llm-routing-strategies-for-generative-ai-applications-on-aws/
 
 ### Frontend (Website)
 
