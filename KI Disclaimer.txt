@@ -1,0 +1,22 @@
+Hinweis zum Einsatz von KI-gestützten Hilfsmitteln
+Im Rahmen dieser wissenschaftlichen Arbeit wurden moderne KI-gestützte Systeme sowie digitale Tools unterstützend eingesetzt, um einzelne Arbeitsschritte effizienter zu gestalten. 
+Dabei wurden sämtliche Vorgaben der FOM Hochschule für Oekonomie und Management (Stand: Januar 2024), die Leitlinien der DFG zur Sicherung guter wissenschaftlicher Praxis (Kodex 2023) sowie die Datenschutzbestimmungen der DSGVO eingehalten.
+Die verwendeten Technologien dienten ausschließlich der strukturellen und sprachlichen Optimierung (mithilfe von Claude-4 und Quillbot), der Unterstützung bei der Literaturrecherche (durch Gemini 2.5 DeepResearch) sowie der Umsetzung technischer Funktionen und Programmieraufgaben (mit Claude-4). 
+Ein Beispiel für eine durch ein KI-Modell generierte, anschließend validierte Code-Funktion findet sich im Kapitel Verarbeitung der Nutzereingabe. 
+Dort wurde folgende Funktion mithilfe des Prompts „Schreibe eine Python-Funktion, die das Modell gemma3:4b lokal über Ollama mit einem Prompt ausführt und den Antworttext zurückgibt." verwendet:
+def call_gemma3_4b(prompt):
+    model = "gemma3:4b"
+    model_url = "http://localhost:11434"
+    # Initialize Llama model via Ollama
+    ollama = ChatOllama(
+        model=model,
+        base_url=model_url,
+        temperature=0
+    )
+    response = ollama.invoke(prompt)
+    return response.content
+Alle generierten Inhalte wurden von kritisch geprüft, angepasst und in den wissenschaftlichen Kontext der Arbeit eingeordnet. 
+Die eigenständige Analyse, Bewertung und Interpretation der Ergebnisse sowie sämtliche inhaltlichen Entscheidungen wurden ausschließlich von den Verfassern getroffen. 
+Es wurden keine personenbezogenen oder vertraulichen Daten verarbeitet.
+Diese Erklärung dient der Transparenz über den verantwortungsvollen Einsatz digitaler Hilfsmittel. 
+Wir versichern, dass die vorliegende Arbeit trotz KI-gestützter Unterstützung eine eigenständige wissenschaftliche Leistung darstellt.
