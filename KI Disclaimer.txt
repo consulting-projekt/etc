@@ -4,18 +4,29 @@ Dabei wurden sämtliche Vorgaben der FOM Hochschule für Oekonomie und Managemen
 Die verwendeten Technologien dienten ausschließlich der strukturellen und sprachlichen Optimierung (mithilfe von Claude-4 und Quillbot), der Unterstützung bei der Literaturrecherche (durch Gemini 2.5 DeepResearch) sowie der Umsetzung technischer Funktionen und Programmieraufgaben (mit Claude-4). 
 Ein Beispiel für eine durch ein KI-Modell generierte, anschließend validierte Code-Funktion findet sich im Kapitel Verarbeitung der Nutzereingabe. 
 Dort wurde folgende Funktion mithilfe des Prompts „Schreibe eine Python-Funktion, die das Modell gemma3:4b lokal über Ollama mit einem Prompt ausführt und den Antworttext zurückgibt." verwendet:
-def call_gemma3_4b(prompt):
-    model = "gemma3:4b"
-    model_url = "http://localhost:11434"
-    # Initialize Llama model via Ollama
-    ollama = ChatOllama(
-        model=model,
-        base_url=model_url,
-        temperature=0
-    )
-    response = ollama.invoke(prompt)
-    return response.content
-Alle generierten Inhalte wurden von kritisch geprüft, angepasst und in den wissenschaftlichen Kontext der Arbeit eingeordnet. 
+def run_gemma3_ollama(prompt: str, host: str = "http://localhost:11434") -> str:
+    """
+    Führt das Modell gemma3:4b lokal über Ollama mit dem gegebenen Prompt aus und gibt den Antworttext zurück.
+ 
+    Args:
+        prompt (str): Der Prompt, der an das Modell geschickt wird.
+        host (str): Die Ollama-Host-URL. Standard: http://localhost:11434
+ 
+    Returns:
+        str: Die Antwort des Modells als Text.
+    """
+    endpoint = f"{host}/api/generate"
+    payload = {
+        "model": "gemma3:4b",
+        "prompt": prompt,
+        "stream": False
+    }
+    response = requests.post(endpoint, json=payload)
+    response.raise_for_status()
+    result = response.json()
+    return result.get("response", "")
+Alle generierten Inhalte wurden von kritisch geprüft, angepasst und in den wissenschaftlichen Kontext der Arbeit eingeordnet.
+Es werden keine expliziten Zitate verwendet. Daher sind alle Referenzen zu Quellen sinngemäß und nicht wörtlich zu verstehen.
 Die eigenständige Analyse, Bewertung und Interpretation der Ergebnisse sowie sämtliche inhaltlichen Entscheidungen wurden ausschließlich von den Verfassern getroffen. 
 Es wurden keine personenbezogenen oder vertraulichen Daten verarbeitet.
 Diese Erklärung dient der Transparenz über den verantwortungsvollen Einsatz digitaler Hilfsmittel. 
